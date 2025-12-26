@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Darija Translator",
+  "version": "1.0.0",
+  "description": "Translate English to Moroccan Darija instantly",
+  "permissions": [
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ],
+  "action": {
+    "default_title": "Open Darija Translator"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "icons": {
+    "16": "🤖",
+    "48": "🖹",
+    "128": "🎙️"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

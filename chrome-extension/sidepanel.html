@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darija Translator</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🇲🇦 Darija Translator</h1>
+      <p>English → Moroccan Darija</p>
+    </div>
+
+    <div class="translator">
+      <div class="input-section">
+        <label for="inputText">English Text:</label>
+        <textarea 
+          id="inputText" 
+          placeholder="Type or paste English text here..."
+          rows="6"
+        ></textarea>
+      </div>
+
+      <div class="button-group">
+        <button id="translateBtn" class="btn-primary">
+          <span id="btnText">Translate</span>
+        </button>
+        <button id="clearBtn" class="btn-secondary">Clear</button>
+      </div>
+
+      <div id="error" class="error" style="display: none;"></div>
+
+      <div id="resultSection" class="result-section" style="display: none;">
+        <label>Darija Translation:</label>
+        <div id="translatedText" class="result"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="status" id="status">
+        <span class="status-dot"></span>
+        <span>Ready</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
